@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Empresa - Misión y Visión</title>
+    <link rel="stylesheet" href="styles/nuestra_empresa.css">
+</head>
+<body>
+    <!-- Video de fondo -->
+    <div class="video-container">
+        <video class="background-video" autoplay muted loop>
+            <source src="videos/inicio.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+
+    <!-- Título -->
+    <h1>Nuestra Empresa - Misión y Visión</h1>
+
+    <!-- Carrusel de imágenes -->
+    <section class="carousel-container">
+        <div class="carousel" id="carousel">
+            <img src="images/NUESTRA EMPRESA MISION Y VISION/0.jpg" alt="Imagen 1" class="carousel-image">
+            <img src="images/NUESTRA EMPRESA MISION Y VISION/1.jpg" alt="Imagen 2" class="carousel-image">
+            <img src="images/NUESTRA EMPRESA MISION Y VISION/2.jpg" alt="Imagen 3" class="carousel-image">
+            <img src="images/NUESTRA EMPRESA MISION Y VISION/3.jpg" alt="Imagen 4" class="carousel-image">
+        </div>
+        <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+    </section>
+
+    <!-- Botón para volver -->
+    <a href="index.html" class="btn-back">Volver al Inicio</a>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Constructora Biumec de México S.A. de C.V. Todos los derechos reservados.
+    </footer>
+
+    <!-- Script -->
+    <script src="scripts/nuestra_empresa.js"></script>
+</body>
+</html>

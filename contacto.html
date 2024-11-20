@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles/nuestra_empresa.css">
+</head>
+<body>
+    <!-- Video de fondo -->
+    <video autoplay loop muted id="background-video">
+        <source src="public/videos/menu_7.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <div class="container">
+        <h1>Contacto</h1>
+        
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-image-container">
+                <img id="carousel-image" src="public/images/CONTACTO/1.jpg" alt="Imagen Contacto">
+            </div>
+            <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <a href="index.html" class="back-button">Volver al inicio</a>
+    </div>
+
+    <script>
+        const images = [
+            "public/images/CONTACTO/1.jpg",
+            "public/images/CONTACTO/2.png"
+        ];
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const imgElement = document.getElementById('carousel-image');
+            imgElement.src = images[index];
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            showImage(currentIndex);
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            showImage(currentIndex);
+        }
+    </script>
+</body>
+</html>
